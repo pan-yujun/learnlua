@@ -1,0 +1,11 @@
+-- 使用一个完整匹配和一个匹配的第二个串来替换
+x,y = string.gsub("hello world from c to lua", "(%w+) (%a+)", "%0 %0")
+print(x,y)
+m,n = string.gsub("hello world from c to lua", "(%w+) (%a+)", "%0%0")
+print(m,n)
+a,b = string.gsub("hello world from c to lua", "(%w+) (%a+)", "%0 %2")
+print(a,b)
+c,d = string.gsub("hello world from c to lua", "(%w+) (%a+)", "%0 %1")
+print(c,d)
+e,f = string.gsub("hello world from c to lua", "(%w+) (%a+)", "%0 %3")
+print(e,f)
